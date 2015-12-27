@@ -11,7 +11,6 @@ print("Image path: ", args.image)
 # read image from path given as arg
 image = cv2.imread(args.image)
 orig = image.copy()
-
 # convert to grayscale
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # equalize the histogram to remove light areas
